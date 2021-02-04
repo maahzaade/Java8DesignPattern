@@ -1,5 +1,10 @@
 package com.design.pattern.observor;
 
+//The observer pattern defines a one-to-many dependency between objects so that when one object changes state,
+//all of its dependents are notified and updated automatically.
+//The object which is being watched is called the subject.
+//The objects which are watching the state changes are called observers or listeners.
+
 public class Youtube {
     public static void main(String[] args) {
         Subject telusko = new Channel();
