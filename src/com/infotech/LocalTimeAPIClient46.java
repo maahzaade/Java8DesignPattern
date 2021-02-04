@@ -9,7 +9,7 @@ public class LocalTimeAPIClient46 {
 
         LocalTime localTime1 = LocalTime.now();
         System.out.println(localTime1);
-        System.out.println("++++++++++++++++++++++++++++++++++++++++");
+        System.out.println("+++++++++++++++++++++++++++++++++++++++++");
 
         LocalTime localTime2 = LocalTime.parse("09:30");
         System.out.println(localTime2);
