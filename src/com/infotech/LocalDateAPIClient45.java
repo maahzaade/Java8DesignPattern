@@ -68,6 +68,15 @@ public class LocalDateAPIClient45 {
         System.out.println("++++++++++++++++++++++++++++++++++++++++");
 
 
+        LocalDate finalDate = localDate1.plus(Period.ofDays(5));
+        int days = Period.between(localDate1, finalDate).getDays();
+        System.out.println(days);
+        System.out.println("++++++++++++++++++++++++++++++++++++++++");
+
+
+        long between = ChronoUnit.DAYS.between(localDate1, finalDate);
+        System.out.println(days);
+        System.out.println("++++++++++++++++++++++++++++++++++++++++");
 
     }
 }
