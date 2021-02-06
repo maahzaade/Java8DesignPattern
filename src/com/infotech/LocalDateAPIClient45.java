@@ -75,7 +75,7 @@ public class LocalDateAPIClient45 {
 
 
         long between = ChronoUnit.DAYS.between(localDate1, finalDate);
-        System.out.println(days);
+        System.out.println(between);
         System.out.println("++++++++++++++++++++++++++++++++++++++++");
 
     }
