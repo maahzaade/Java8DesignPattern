@@ -18,7 +18,7 @@ public class StreamReductionDemoWithReduceClient39 {
 
         System.out.println("++++++++++++++++++++++++++++++++++++++++");
         Integer reduced3 = Arrays.asList(1, 2, 3).parallelStream().reduce(10, (a, b) -> a + b, (a, b) -> {
-            System.out.println("Inside Combiner ..");
+            System.out.println("Inside Combiner .."+a+".."+b);
             return a + b;
         });
         //11, 12, 13

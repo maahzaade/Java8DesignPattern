@@ -1,6 +1,7 @@
 package com.infotech;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -8,7 +9,7 @@ public class ReductionCollectionAPIinStreamClient31 {
 
     public static void main(String[] args) {
 
-        List<Integer> integerList = new ArrayList<>();
+        List<Integer> integerList = Arrays.asList(1,2,3);
         Integer sum = integerList.stream().reduce(100, (x,y) -> x+y);
         System.out.println(sum);
 

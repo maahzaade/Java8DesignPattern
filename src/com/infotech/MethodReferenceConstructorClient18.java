@@ -16,13 +16,12 @@ public class MethodReferenceConstructorClient18 {
         List<Double> findSquareRoots = MethodReferenceConstructorClient18.findSquareRoots(numbers, Integer::new);
         findSquareRoots.forEach(System.out::println);
 
-//        I have an issue here with apply
-//        System.out.println("++++++++++++++++++++++++++++++++++++++++");
-//
-//        List<Integer> ints = Arrays.asList(4, 9, 36, 100);
-//        ints.forEach(System.out::println);
-//        List<Boolean> testBools = MethodReferenceConstructorClient18.findFunctionNature(ints, Integer::new);
-//        testBools.forEach(System.out::println);
+        System.out.println("++++++++++++++++++++++++++++++++++++++++");
+
+        List<Integer> ints = Arrays.asList(4, 9, 36, 100);
+        ints.forEach(System.out::println);
+        List<Boolean> testBools = MethodReferenceConstructorClient18.findFunctionNature(ints, n-> n>1);
+        testBools.forEach(System.out::println);
     }
 
 
@@ -33,9 +32,9 @@ public class MethodReferenceConstructorClient18 {
     }
 
 
-//    private static List<Boolean> findFunctionNature(List<Integer> ints, Function<Integer, Boolean> f) {
-//        List<Boolean> results = new ArrayList<>();
-//        ints.forEach(x -> results.add(f.apply(x)));
-//        return results;
-//    }
+    private static List<Boolean> findFunctionNature(List<Integer> ints, Function<Integer, Boolean> f) {
+        List<Boolean> results = new ArrayList<>();
+        ints.forEach(x -> results.add(f.apply(x)));
+        return results;
+    }
 }

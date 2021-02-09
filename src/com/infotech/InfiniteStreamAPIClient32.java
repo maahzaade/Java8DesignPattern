@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.UUID;
 import java.util.function.Supplier;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.DoubleStream;
 import java.util.stream.IntStream;
@@ -46,6 +47,10 @@ public class InfiniteStreamAPIClient32 {
         System.out.println("++++++++++++++++++++++++++++++++++++++++");
         IntStream chars = "abcd".chars();
         chars.forEach(System.out::println);
+
+        System.out.println("++++++++++++++++++++++++++++++++++++++++");
+        Stream<String> streamOfStr= Pattern.compile(",").splitAsStream("a,b,c");
+        streamOfStr.forEach(System.out::println);
 
 
 
