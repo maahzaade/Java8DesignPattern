@@ -5,6 +5,7 @@ import com.infotech.model.Employee;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
+import java.util.function.BiConsumer;
 
 public class EmployeeClient {
 
@@ -30,5 +31,19 @@ public class EmployeeClient {
         }
         System.out.println("++++++++++++++++++++++++++++++++++++++++");
         map.forEach((k, v) -> System.out.println("*key: " + k + "*value:" + v));
+
+
+        Map<Integer, String> biConMap = new HashMap<>();
+        biConMap.put(1, "A");
+        biConMap.put(2, "B");
+        biConMap.put(3, "C");
+        biConMap.put(4, "D");
+        biConMap.put(5, "E");
+        biConMap.put(6, "F");
+
+        BiConsumer<Integer, String> biConsumer = (k, v) -> System.out.println("*key: " + k + "=====value:" + v);
+
+        biConMap.forEach(biConsumer);
+        System.out.println("+++++++++++++++++++++++++++++++++++++++");
     }
 }
