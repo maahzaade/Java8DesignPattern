@@ -1,5 +1,7 @@
 package com.infotech.model;
 
+import java.util.function.Function;
+
 public class Person {
     private String name;
     private Integer age;
@@ -18,6 +20,10 @@ public class Person {
         return age;
     }
 
+
+    public String customShow(Function<Person, String> function) {
+        return function.apply(this);
+    }
 
     @Override
     public String toString() {

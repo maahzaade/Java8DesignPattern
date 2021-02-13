@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Function;
 
-public class MethodReferenceToInstanceMethodClient19 {
+public class MethodReferenceToInstanceMethodClient19A {
 
     public static void main(String[] args) {
 
@@ -26,7 +26,7 @@ public class MethodReferenceToInstanceMethodClient19 {
         people.add(personFour);
 
 
-        List<String> peopleNames = MethodReferenceToInstanceMethodClient19.getPeoplenames(people, Person::getName);
+        List<String> peopleNames = MethodReferenceToInstanceMethodClient19A.getPeoplenames(people, Person::getName);
         peopleNames.forEach(System.out::println);
 
     }
