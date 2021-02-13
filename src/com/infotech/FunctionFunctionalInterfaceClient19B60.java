@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Function;
 
-public class FunctionFunctionalInterfaceClient19B {
+public class FunctionFunctionalInterfaceClient19B60 {
     public static void main(String[] args) {
         List<Person> people = new ArrayList();
 
