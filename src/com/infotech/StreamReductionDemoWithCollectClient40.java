@@ -3,7 +3,6 @@ package com.infotech;
 import com.infotech.model.Product;
 
 import java.util.*;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 public class StreamReductionDemoWithCollectClient40 {
