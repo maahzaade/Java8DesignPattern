@@ -12,9 +12,16 @@ public class LambdaExpressionDriver68 {
         System.out.println(fullName);
 
         System.out.println("++++++++++++++++++++++++++++++++++++++++");
-        Function<String, String> function = s->"Hi "+s;
+        Function<String, String> function = s -> "Hi " + s;
         String apply = function.apply("Adrian");
         System.out.println(apply);
+
+        System.out.println("++++++++++++++++++++++++++++++++++++++++");
+//        Function<String, String> functionRef = s -> s.toUpperCase();
+        //instead of above line, use method reference
+        Function<String, String> functionRef = String::toUpperCase;
+        String applyRef = functionRef.apply("Adrian");
+        System.out.println(applyRef);
     }
 
     private static String getFullName(String s1, String s2) {
