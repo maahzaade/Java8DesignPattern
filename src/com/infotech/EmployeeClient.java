@@ -45,5 +45,11 @@ public class EmployeeClient {
 
         biConMap.forEach(biConsumer);
         System.out.println("+++++++++++++++++++++++++++++++++++++++");
+
+        BiConsumer<Integer, Integer> adder = (num1, num2) -> System.out.println("Adder: " + (num1 + num2));
+        BiConsumer<Integer, Integer> multiplier = (num1, num2) -> System.out.println("Multiplier: " + (num1 * num2));
+
+        adder.andThen(multiplier).accept(30, 20);
+        multiplier.andThen(adder).accept(12, 10);
     }
 }
