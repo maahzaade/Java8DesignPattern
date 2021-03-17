@@ -1,4 +1,4 @@
-package com.test.sample;
+package com.test.sample.classcasting;
 
 public class Parent implements GrandParent{
 
