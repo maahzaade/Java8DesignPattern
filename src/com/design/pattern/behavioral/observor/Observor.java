@@ -1,4 +1,4 @@
-package com.design.pattern.observor;
+package com.design.pattern.behavioral.observor;
 
 public interface Observor {
     void update(String title);

@@ -1,4 +1,4 @@
-package com.design.pattern.observor;
+package com.design.pattern.behavioral.observor;
 
 public interface Subject {
     void subscribe(Observor sub);
