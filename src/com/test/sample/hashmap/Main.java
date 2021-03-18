@@ -16,8 +16,10 @@ public class Main {
 
         // Add a new key-value pair only if the key does not exist in the HashMap, or is mapped to `null`
         numberMapping.putIfAbsent("Four", 4);
-        numberMapping.putIfAbsent("Three", 5);
+        numberMapping.put("Three", 5);
+        numberMapping.put(null, 6);
+        numberMapping.put("Seven", null);
 
-        System.out.println(numberMapping);
+        numberMapping.forEach((k, v) -> System.out.println("key: " + k + " ---------- value:" + v));
     }
 }
