@@ -2,12 +2,12 @@ package com.problem.solving;
 
 import java.util.ArrayList;
 
-public class MergeSort {
+public class MergeSortList {
 
     private ArrayList<Integer> strList;
 
     // Constructor
-    public MergeSort(ArrayList<Integer> input) {
+    public MergeSortList(ArrayList<Integer> input) {
         strList = input;
     }
 
@@ -90,13 +90,13 @@ public class MergeSort {
 
     public static void main(String[] args) {
         ArrayList<Integer> input = new ArrayList<Integer>();
-        int arr[] = {10, 22, 9, 33, 49,
-                50, 31, 60};
+        int arr[] = {10, 22, 9, 33, 49, 50, 31, 60};
+//        int[] arr = {7, 1, 3, 2, 4, 5, 6};
         for (int element : arr) {
             input.add(element);
         }
         System.out.println("************************");
-        MergeSort test = new MergeSort(input);
+        MergeSortList test = new MergeSortList(input);
         test.sort();
         System.out.println("Sorted:");
         test.show();
