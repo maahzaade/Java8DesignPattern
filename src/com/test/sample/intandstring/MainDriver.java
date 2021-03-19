@@ -5,6 +5,9 @@ public class MainDriver {
     public static void main(String[] args) {
         StringToint("23");
         IntToString(23);
+
+        System.out.println(Integer.parseInt("34"));
+        System.out.println(String.valueOf(34));
     }
 
     public static int StringToint(String number) {
