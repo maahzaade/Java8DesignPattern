@@ -1,0 +1,17 @@
+https://www.youtube.com/watch?v=5jQSat1cKMo
+1)What is an API?
+2)API in JAVA?
+3)What is REST API?
+4)Demo
+
+
+Representational State Transfer/REST is a web standard based architecture that uses HTTP Protocol for data communication
+The most commonly used methods:
+GET
+PUT
+DELETE
+POST
+
+command to copy warfile to tomcat
+clean install war:war org.codehaus.mojo:wagon-maven-plugin:upload-single -Dwagon.fromFile=<war-path> -Dwagon.url=file://<tomcat-webapps-path>
+
