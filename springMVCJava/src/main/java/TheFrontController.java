@@ -1,4 +1,4 @@
-package java;/*
+package main.java;/*
  * Created by Mahdiye on 2021, Mar, 22
  */
 
@@ -7,12 +7,12 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 public class TheFrontController extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class[] {TheConfig.class};
+        return new Class[] {main.java.TheConfig.class};
     }
 
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return new Class[]{TheConfig.class};
+        return null;
     }
 
     @Override

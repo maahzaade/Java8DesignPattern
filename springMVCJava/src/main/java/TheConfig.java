@@ -1,4 +1,4 @@
-package java;/*
+package main.java;/*
  * Created by Mahdiye on 2021, Mar, 22
  */
 
@@ -9,6 +9,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("java")
+@ComponentScan("main.java")
 public class TheConfig extends WebMvcConfigurerAdapter {
 }
