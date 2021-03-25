@@ -3,7 +3,7 @@ package com.test.sample.intandstring;
 public class MainDriver {
 
     public static void main(String[] args) {
-//        StringToint("23");
+        StringToint("23");
         IntToString(23);
         myAtoi("23");
 
