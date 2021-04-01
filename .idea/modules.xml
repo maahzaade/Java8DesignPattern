@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Java8DesignPattern.iml" filepath="$PROJECT_DIR$/Java8DesignPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TicketBookingRestApp/TicketBookingRestApp.iml" filepath="$PROJECT_DIR$/TicketBookingRestApp/TicketBookingRestApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springAOP/springAOP.iml" filepath="$PROJECT_DIR$/springAOP/springAOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springMVC/springMVC.iml" filepath="$PROJECT_DIR$/springMVC/springMVC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springMVCJava/springMVCJava.iml" filepath="$PROJECT_DIR$/springMVCJava/springMVCJava.iml" />
+    </modules>
+  </component>
+</project>

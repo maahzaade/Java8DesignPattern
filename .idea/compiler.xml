@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springAOP" />
+        <module name="springMVC" />
+        <module name="springMVCJava" />
+        <module name="TicketBookingRestApp" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cms" target="1.8" />
+      <module name="restfullAPIDemo" target="1.8" />
+      <module name="SpringAOP" target="1.7" />
+      <module name="springAOP" target="1.7" />
+      <module name="springMVC" target="1.7" />
+      <module name="springMVCJava" target="1.7" />
+      <module name="TicketBookingRestApp" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
