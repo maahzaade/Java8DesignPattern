@@ -19,11 +19,10 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.infotech.book.ticket.app.TicketBookingManagementApplication;
 import com.infotech.book.ticket.app.entities.Ticket;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = TicketBookingManagementApplication.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@SpringBootTest(classes = TicketBookingController.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class TicketBookingControllerIntegrationTest {
 
     //assign a random port
