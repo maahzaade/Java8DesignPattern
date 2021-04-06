@@ -1,0 +1,8 @@
+https://www.kammerl.de/ascii/AsciiSignature.php
+
+
+GET                 /customers
+GET                 /customers/id
+POST                /customers
+PUT                 /customers/id
+DELETE              /customers/id
