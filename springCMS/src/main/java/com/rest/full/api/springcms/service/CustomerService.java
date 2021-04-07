@@ -3,10 +3,13 @@ package com.rest.full.api.springcms.service;/*
  */
 
 import com.rest.full.api.springcms.model.Customer;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
+@Component
 public class CustomerService {
 
     private int count = 1;
