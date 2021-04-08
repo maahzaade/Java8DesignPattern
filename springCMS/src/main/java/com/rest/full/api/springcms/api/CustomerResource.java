@@ -32,4 +32,9 @@ public class CustomerResource {
     public Customer getCustomer(@PathVariable("customerId") int customerId){
         return customerService.getCustomer(customerId);
     }
+
+    @PutMapping(value ="/{customerId}")
+    public Customer updateCustomer(@PathVariable("customerId") int customerId, @RequestBody Customer customer){
+        return customerService.updateCustomer(customerId, customer);
+    }
 }
