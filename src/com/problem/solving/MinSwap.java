@@ -12,6 +12,11 @@ public class MinSwap {
         int originalArray[] = Arrays.copyOfRange(arr, 0, arr.length);
 
         divide(arr);
+
+        for (int i = 0; i< arr.length; i++){
+            System.out.println(arr[i]);
+        }
+
         int swapCounter = 0;
         for (int counter = 0; counter < arr.length; counter++) {
             if (arr[counter] != originalArray[counter]) {
@@ -19,7 +24,7 @@ public class MinSwap {
             }
         }
 
-        return --swapCounter;
+        return swapCounter;
     }
 
     static void divide(int list[]) {
@@ -34,18 +39,17 @@ public class MinSwap {
             int rightList[] = Arrays.copyOfRange(list, middle + 1, right + 1);
             divide(rightList);
 
-            combine(list, leftList, rightList, left, middle, right);
+            combine(list, leftList, rightList);
         }
     }
 
-    static void combine(int list[], int leftList[], int rightList[], int left, int middle, int right) {
+    static void combine(int list[], int leftList[], int rightList[]) {
         int leftNumCounts = leftList.length;
         int rightNumCounts = rightList.length;
 
 
-        int i = 0, j = 0;
+        int i = 0, j = 0, k =0;
 
-        int k = left;
         while (i < leftNumCounts && j < rightNumCounts) {
             if (leftList[i] <= rightList[j]) {
                 list[k] = leftList[i];
@@ -77,6 +81,7 @@ public class MinSwap {
 
         int res = minimumSwaps(arr);
 
+        System.out.println("-----------");
         System.out.println(res);
 
 
