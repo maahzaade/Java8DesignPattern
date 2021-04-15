@@ -37,11 +37,12 @@ public class CustomerService {
     }
 
     public Customer getCustomer(int customerId) {
-        return customers
-                .stream()
-                .filter(c -> c.getCustomerId() == customerId)
-                .findFirst()
-                .get();
+//        return customers
+//                .stream()
+//                .filter(c -> c.getCustomerId() == customerId)
+//                .findFirst()
+//                .get();
+        return customerDAO.findById(customerId).get();
 
     }
 
@@ -65,14 +66,15 @@ public class CustomerService {
     }
 
     public void deleteCustomer(int customerId) {
-        customers
-                .stream()
-                .forEach(c -> {
-                            if (c.getCustomerId() == customerId) {
-                                customers.remove(c);
-                            }
-                        }
-                );
+//        customers
+//                .stream()
+//                .forEach(c -> {
+//                            if (c.getCustomerId() == customerId) {
+//                                customers.remove(c);
+//                            }
+//                        }
+//                );
+        customerDAO.deleteById(customerId);
 
     }
 }
