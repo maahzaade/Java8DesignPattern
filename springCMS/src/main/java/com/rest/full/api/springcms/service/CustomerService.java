@@ -47,22 +47,24 @@ public class CustomerService {
     }
 
     public Customer updateCustomer(int customerId, Customer customer) {
-        customers
-                .stream()
-                .forEach(c -> {
-                            if (c.getCustomerId() == customerId) {
-                                c.setCustomerEmail(customer.getCustomerEmail());
-                                c.setCustomerFirstName(customer.getCustomerFirstName());
-                                c.setCustomerEmail(customer.getCustomerEmail());
-                            }
-                        }
-                );
-
-        return customers
-                .stream()
-                .filter(c -> c.getCustomerId() == customerId)
-                .findFirst()
-                .get();
+//        customers
+//                .stream()
+//                .forEach(c -> {
+//                            if (c.getCustomerId() == customerId) {
+//                                c.setCustomerEmail(customer.getCustomerEmail());
+//                                c.setCustomerFirstName(customer.getCustomerFirstName());
+//                                c.setCustomerEmail(customer.getCustomerEmail());
+//                            }
+//                        }
+//                );
+//
+//        return customers
+//                .stream()
+//                .filter(c -> c.getCustomerId() == customerId)
+//                .findFirst()
+//                .get();
+        customer.setCustomerId(customerId);
+        return customerDAO.save(customer);
     }
 
     public void deleteCustomer(int customerId) {
