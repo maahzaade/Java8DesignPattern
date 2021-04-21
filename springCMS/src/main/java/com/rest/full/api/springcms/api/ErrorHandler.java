@@ -4,6 +4,7 @@ package com.rest.full.api.springcms.api;/*
 
 import com.rest.full.api.springcms.exception.ApplicationError;
 import com.rest.full.api.springcms.exception.CustomerNotFoundException;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -17,6 +18,9 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 @RestController
 public class ErrorHandler extends ResponseEntityExceptionHandler {
 
+    @Value("${api_doc_url}")
+    private String details;
+
     @ExceptionHandler(CustomerNotFoundException.class)
     public ResponseEntity<ApplicationError> handleCustomerNotFoundException(CustomerNotFoundException customerNotFoundException, WebRequest webRequest){
 
@@ -24,7 +28,7 @@ public class ErrorHandler extends ResponseEntityExceptionHandler {
 
         error.setCode(101);
         error.setMessage(customerNotFoundException.getMessage());
-
+        error.setDetails(details);
         return new ResponseEntity<>(error, HttpStatus.NOT_FOUND);
 
     }
