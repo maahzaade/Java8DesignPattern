@@ -9,11 +9,11 @@ import javax.servlet.*;
 import java.io.IOException;
 
 @Component
-@Order(1)
-public class MyFilter_1 implements Filter {
+@Order(3)
+public class MyFilter_2 implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-        System.out.println("Filter 1 is called...");
+        System.out.println("Filter 2 is called...");
         filterChain.doFilter(servletRequest, servletResponse);
     }
 }
